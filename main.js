@@ -1,5 +1,5 @@
 var q = window.location.href;
-		var query = q.substring(39, q.length);
+		var query = q.substring(61, q.length);
 		var xhr = new XMLHttpRequest();
 		var url = "https://www.omdbapi.com/?t=";
 		url += query;
@@ -14,7 +14,7 @@ var q = window.location.href;
 			       
 			       var title = rss.Title;
 			       var year = rss.Year;
-			       document.getElementById('titleNav').innerHTML = ('<h5 class="white-text">'+title+' ('+year+')'+'</h5>');
+			       document.getElementById('titleNav').innerHTML = ('<h2 class="white-text">'+title+' ('+year+')'+'</h2>');
 			       var type = rss.Type;
 			       //document.getElementById('type').innerHTML = (' '+type+' > ');
 			       var genres = rss.Genre;
@@ -25,7 +25,7 @@ var q = window.location.href;
 			       var runtime = rss.Runtime;
 			       document.getElementById('details').innerHTML += (released+'   | '  +runtime+'    |    '+genres+'  |  Metascore: '+meta);
 			       var poster = rss.Poster;
-			       document.getElementById('poster').innerHTML = ('<img class="responsive-img z-depth-2" src="'+poster+'" alt="'+title+' '+released+' poster" height="440px" />');
+			       document.getElementById('poster').innerHTML = ('<img class="responsive-img z-depth-2" src="'+poster+'" alt="'+title+' '+released+' poster" width="100%" />');
 			       var director = rss.Director;
 			       document.getElementById('director').innerHTML += director;
 			       var writer = rss.Writer;

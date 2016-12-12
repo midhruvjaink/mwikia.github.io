@@ -5,9 +5,11 @@
 	<!--meta tags-->
 	<meta content="1 days" name="revisit-after">
 	<meta content="Dhruv Jain" name="author">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta content="Search for Movies' and TV Series' basic details, imdb and tomato ratings, plot, director, writer and casting names and Box Office collection with Official Poster and Trailer." name="description">
 	<meta content="Dhruv Jain, DhruvJain, mwikia, Dhruv mwikia, movies, Tv series, movies ratings, movies imdb ratings, movies tomato ratings, movies box office collection, movies director, movies casting, movies writer, movies plot, movies official poster, movies official trailer, movies awards, TV series ratings, TV series imdb ratings, TV series tomato ratings, TV series box office collection, TV series director, TV series casting, TV series writer, TV series plot, TV series official poster, TV series official trailer, TV series awards, Dhruv, midhruvjaink, Mukesh Jain, DatorLab, GitHub, StackOverFlow, Quora, dj, Dhruva Jain, ZeroPennyMovies, JECRC, Jaipur, India, JECRC College, Jaipur Engineering College and Research Center," name="keywords">
 	<meta content="Dhruv Jain" name="site_name">
+	<link rel="manifest" href="manifest.json">
 	<link href='fav.png' rel='icon' type='image/x-icon'/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--og meta-->
@@ -17,26 +19,24 @@
 	<link href="index.css" rel="stylesheet" />     
 </head>
 <body>
-	<nav class="top indigo darken-3 z-depth-3">
-		<div class="row">
-			<div class="col-sm-12 col-md-4 col-lg-5">
-				<img src="logo.svg" alt="mwikia logo" title="mwikia logo" class="mainLogo" />
-			</div>
+	<div class="row top indigo darken-3">
+		<div class="col-sm-12 col-md-4 col-lg-5">
+			<img src="logo.svg" alt="mwikia logo" title="mwikia logo" class="mainLogo" />
 		</div>
-	</nav>
-	<nav class="indigo darken-1 hoverable z-depth-2">
-		<div class="row">
-			<div class="col-sm-12 col-md-7 col-lg-6 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-				<form action="search.html">
-					<input type="search" id="search" name="q" placeholder="Search Movie or TV Series" class="" />
-					<script type="text/javascript">
-						var input = document.getElementById('search');
-						input.focus();
-						input.select();
-					</script>
-				</form>
-			</div>
+	</div>
+
+	<div class="clearfix"></div>
+	<div class="row green hoverable z-depth-2 search">
+		<div class="col-sm-12 col-md-7 col-lg-6 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+			<form action="search.html">
+				<input type="search" id="search" name="q" placeholder="Search Movie or TV Series" class="searchBox white-text" />
+				<script type="text/javascript">
+					var input = document.getElementById('search');
+					input.focus();
+					input.select();
+				</script>
+			</form>
 		</div>
-	</nav>	
+	</div>
 </body>
 </html>

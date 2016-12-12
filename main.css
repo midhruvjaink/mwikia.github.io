@@ -3,9 +3,9 @@
 	padding-left: 10px;
 }
 .search{
-	width: 600px;
 	padding-left: 10px;
 	padding-right: 10px;
+	font-size: 20px;
 }
 #imdbRatings{
 	display: inline;
@@ -18,8 +18,9 @@
 }
 .titleNav{
 	height: 130px;
+
 }
-#titleNav>h5{
+#titleNav>h2{
 	padding-top: 40px;
 	padding-left: 30px;
 }

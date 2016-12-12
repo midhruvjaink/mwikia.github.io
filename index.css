@@ -3,14 +3,16 @@
 	padding-left: 10px;
 }
 .search{
-	width: 600px;
-	padding-left: 10px;
+	height: 200px;
 }
 .top{
-	height: 300px;
+	height: 280px;
 }
 .mainLogo{
 	padding-left: 20px;
 	padding-top: 20px;
 	width: 200px; 
+}
+input.searchBox{
+	padding-top: 30px;
 }
